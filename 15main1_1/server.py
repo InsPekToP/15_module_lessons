@@ -1,3 +1,6 @@
+#15main1_1
+#Создание сервера
+
 #создаем локальный сервер без помощи сторонних фрейморков
 from http.server import HTTPServer,CGIHTTPRequestHandler
 #HTTPServer - за счет этого класса сможем создать локальный сервер
