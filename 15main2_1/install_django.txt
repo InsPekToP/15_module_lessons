@@ -1,0 +1,11 @@
+15main2_1
+Установка Django
+
+Открываем терминал или командную строку:
+pip install Django
+обновить
+pip install Django --upgrade
+обновить pip
+python.exe -m pip install --upgrade pip
+проверить версию
+python -m django --version
