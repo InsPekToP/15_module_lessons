@@ -19,4 +19,4 @@
 
 [1]:https://github.com/InsPekToP/15_module_lessons/blob/master/15main1_1/server.py
 [2]:https://github.com/InsPekToP/15_module_lessons/blob/master/15main2_1/install_django.txt
-[3]:
+[3]:https://github.com/InsPekToP/15_module_lessons/blob/master/15main3_1/instruction.py
