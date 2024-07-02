@@ -20,4 +20,34 @@
 
 #внутри основного urls.py(itProger) мы подключаем другие urls.py(blog),кот. нах. внутри опр-ых
 #приложениях,а внутри файлов,кот находятся в приложениях мы будем обрабатывать(например 
-#переход на главную страницу и т.д.)
+#переход на главную страницу,стничку контакты и т.д.)
+
+#в файле urls.py(itProger) через запятую подключаем include(from django.urls import path, include)
+
+#path('', include('blog.urls') ), - при переходе на главную страницу,подлючаем файл 'blog.urls'
+#расширение не прописываем
+#при переходе на главную страницу,будет переадресация на urls.py(blog)
+#и отслеживание url-адресов будет через urls.py(blog)
+
+#копируем все из urls.py(itProger) в urls.py(blog)
+#переходим в в urls.py(blog) и там дальше конпектируем
+
+#ЛОГИКА ТАКАЯ:
+#path('', include('blog.urls')) - ф-ия path отлеживает адреса,и принимает 2м пар-ом
+#что с этим будем делать
+#В нашем случае,смотрим перерехо на главную path('', делаем- include('blog.urls')) - 
+#подключение blog.urls. В blog.urls пишем path('',views.home) - выполняем views.home)-
+#ф-ию home кот.лежит в views.py.В views.py 
+# def home(request):
+    #return HttpResponse('<h3>Привет всем</h3>')
+#пишем HTML(Привет всем)
+
+#Если не правильно прописать url-адрес(about-us)выбивает ошибку:
+# Using the URLconf defined in itProger.urls, Django tried these URL patterns, in this order:
+
+# 1.admin/
+# 2.
+# 3.about
+# The current path, about-us, didn’t match any of these.
+#Пишет,что не отслеживает url-адресс - about-us.Отслеживает  1.admin/  
+#2. (пустая страница(главная)) 3.about
