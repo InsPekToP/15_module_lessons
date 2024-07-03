@@ -42,11 +42,12 @@ def home(request):
         }
     ]
     #теперь вместо ключа some подставляем news 
-    #и подставляем значение news
+    #и подставляем значение список news
     data = {
-        'news': news
+        'news': news,
+        #Сюда же подставляем 'title'
+        'title':'Главная страница1'
     }
-
     return render(request,'blog/home.html',data)
 
 
