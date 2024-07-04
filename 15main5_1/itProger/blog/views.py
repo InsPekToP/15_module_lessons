@@ -38,7 +38,8 @@ def home(request):
             'title' : 'Наша вторая статья',
             'text' : 'Полный текст статьи',
             'date' : '10 Января 2100 года',
-            'avtor' : 'Джон'
+            #теперь удалим инфу про автора
+            # 'avtor' : 'Джон'
         }
     ]
     #теперь вместо ключа some подставляем news 
@@ -52,4 +53,8 @@ def home(request):
 
 
 def contacti(request):
-    return render(request,'blog/contacti.html')
+#сюда тоже можем передавать инфу,но другим способом
+#также можем создавать словари без пер-ой
+#и также теперь можем выводить это в contacti.html
+    return render(request,'blog/contacti.html',{'title': 'Страница контакты1'})
+
