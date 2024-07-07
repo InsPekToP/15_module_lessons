@@ -49,7 +49,7 @@ def home(request):
         #Сюда же подставляем 'title'
         'title':'Главная страница1'
     }
-    return render(request,'blog/home.html',data)
+    return render(request,'blog/home2.html',data)
 
 
 def contacti(request):

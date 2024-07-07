@@ -39,3 +39,9 @@
 
 #теперь проблема с тем,что много повторяющего кода в home.html и contacti.html
 #поэтому делаем шаблоны и просто меняем title
+
+#Подключаем Bootstrap
+#bootstrapcdn.com - подключение bootstrap стилей
+#<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+#https://getbootstrap.com/ - примеры 
