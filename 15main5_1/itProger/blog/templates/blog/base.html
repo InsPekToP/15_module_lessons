@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- шаблон для страничек -->
+    <!-- это дает нам то что когда будем наследовать,сможе подставить любой текст -->
+     <!-- названия не должны повторятся:title contacti и т.д. -->
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+<!-- теперь указываем,что мы наследуем все от base.html -->
+<!-- эта конструкция должна быть первой (если исп-ем шаблоны) -->
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,4 +12,20 @@
 <body>
     <h1>{{title}}</h1>
 </body>
-</html>
+</html> -->
+
+
+
+ <!-- указываем,что мы будем подcтавлять в тег <title>-->
+    <!-- тут указываем что будем выводить -->
+     <!-- то что пишем внутри блоков(конструкций)то и выводится -->
+<!-- {{ title }} указан в views.py def contacti(request):
+  return render(request,'blog/contacti.html',{'title': 'Страница контакты1'}) -->
+  {% block title %}
+    {{ title }}
+  {%endblock%}
+
+  <!-- тоже самое с тегом <body></body> -->
+  {% block content %}
+    <h1>{{ title }}</h1>
+  {%endblock%}
