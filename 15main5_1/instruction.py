@@ -45,3 +45,26 @@
 #<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
 #https://getbootstrap.com/ - примеры 
+
+#все картинки стили и т.д. считаются статичесткими файлами,и должны быть в отдельной папке 
+#по типу templates.В папке settings.py есть готовая ссылка на эту папку STATIC_URL = 'static/'
+
+#Заходим в документацию https://docs.djangoproject.com/en/5.0/howto/static-files/
+#и копируем 
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+#     "/var/www/static/",
+# ]
+#"/var/www/static/",-это нужно удалить.Но по ходу обновили,и теперь все работает и с ним
+#Логика такая,что нужно указать полный путь до папки static
+
+#и вписываем этот словарь под STATIC_URL = 'static/'
+
+#Чтобы создать свой CSS-файл.Надо в нашем приложении(blog) создать папку static
+#в ней так же,как и в папке templates нужно создать такую же папку как и наше приложение
+#и уже в ней создаем файл main.css
+#чтобы подлючить css-файл надо в base.html указать,что мы подключаем статик-файлы {% load static%
+#далее <link rel="stylesheet" href="{% static 'blog/main.css' %"> ---указываем что мы подключаем
+#статические файлы(static),представляем что мы находимся в папке static и указываем путь blog/main.css'
+
+49.21
