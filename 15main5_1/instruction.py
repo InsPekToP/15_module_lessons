@@ -67,4 +67,6 @@
 #далее <link rel="stylesheet" href="{% static 'blog/main.css' %"> ---указываем что мы подключаем
 #статические файлы(static),представляем что мы находимся в папке static и указываем путь blog/main.css'
 
-49.21
+#на сайте https://getbootstrap.com/docs/5.3/examples/pricing/
+#копируем футер и вставляем в base.html
+#и удалили тег img, т.к. его у нас нет в проекте
