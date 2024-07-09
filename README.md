@@ -14,6 +14,8 @@
 - **15main5_1**
     - [*Работа с шаблонизатором*][5]
 
+- **15main6_1**
+    - [*Панель администратора*][6]
 
 
 
@@ -26,3 +28,4 @@
 [3]:https://github.com/InsPekToP/15_module_lessons/blob/master/15main3_1/instruction.py
 [4]:https://github.com/InsPekToP/15_module_lessons/blob/master/15main4_1/instruction.py
 [5]:https://github.com/InsPekToP/15_module_lessons/blob/master/15main5_1/instruction.py
+[6]:https://github.com/InsPekToP/15_module_lessons/blob/master/15main6_1/instruction.py
